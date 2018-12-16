@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关于group类分组的方法-->
+<suite name = "test">
+    <test name ="runnAll">
+    <classes>
+        <class name ="com.yin.testng.group.GroupOnClass1"/>
+        <class name ="com.yin.testng.group.GroupOnClass2"/>
+        <class name ="com.yin.testng.group.GroupOnClass3"/>
+        <class name ="com.yin.testng.group.GroupOnClass4"/>
+    </classes>
+    </test>
+    <test name ="runnOnlyOne">
+        <groups>
+            <run>
+                <include name = "stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name ="com.yin.testng.group.GroupOnClass1"/>
+            <class name ="com.yin.testng.group.GroupOnClass2"/>
+            <class name ="com.yin.testng.group.GroupOnClass3"/>
+            <class name ="com.yin.testng.group.GroupOnClass4"/>
+        </classes>
+    </test>
+</suite>
