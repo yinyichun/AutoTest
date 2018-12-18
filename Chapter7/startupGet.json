@@ -1,0 +1,33 @@
+[
+  {
+    "description": "这是我的一个get模拟装请求服务器",
+    "request": {
+      "uri": "/testGet",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html; charset=gbk"
+      },
+      "text": "这是我的第一个GET模拟器的请求"
+    }
+  },
+  {
+    "description": "这是我的一个带参数GET请求",
+    "request": {
+      "uri": "/testGetPramaters",
+      "method": "get",
+      "queries": {
+        "name": "huhanshan",
+        "age": "15"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html; charset=gbk"
+      },
+      "text": "我胡汉三又回来了"
+    }
+
+  }
+]

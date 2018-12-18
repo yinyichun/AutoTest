@@ -1,0 +1,49 @@
+[
+  {
+    "description": "这是我的第一个POST请求模拟装",
+    "request": {
+      "uri": "/postDemo",
+      "method": "post"
+    },
+    "response": {
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text":"这是我的第一个Post请求相应"
+    }
+  },
+  {
+    "description": "这是我的一个带参数的POST请求模拟装",
+    "request": {
+      "uri": "/postDemoParamter",
+      "method": "post",
+      "forms": {
+        "name": "zhangshan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "我的带参数请求成功"
+    }
+  },
+  {
+    "description": "这是我的一个带参数的cookie请求模拟装",
+    "request": {
+      "uri": "/getWithCookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "我的带cookie请求响应"
+    }
+  }
+
+]

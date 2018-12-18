@@ -1,0 +1,55 @@
+[
+  {
+    "description": "这是我的带headers请求的模拟器",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json",
+        "header1": "name"
+      },
+      "json": {
+        "name": "zhangshan",
+        "sex": "man"
+      }
+    },
+    "response": {
+      "headers": {
+        "content-type": "text/html;charset=gbk"
+      },
+      "json": {
+        "zhangshan": "success",
+        "status": "1"
+      }
+    }
+  },
+  {
+    "description": "重定向到百度的模拟器",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "重定向到自己的网页上",
+    "request": {
+      "uri": "/redirectTwo"
+    },
+    "redirectTo": "/redirectNew"
+  },
+  {
+    "description": "这是我的一个带参数GET请求",
+    "request": {
+      "uri": "/redirectNew",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html; charset=gbk"
+      },
+      "text": "我胡汉三又回来了"
+    }
+
+  }
+
+]
