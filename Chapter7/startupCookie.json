@@ -1,5 +1,21 @@
 [
   {
+    "description": "这是response返回cookie信息的get请求",
+    "request": {
+      "uri": "/getCookie",
+      "method": "get"
+    },
+    "response": {
+      "headers":{
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "cookies": {
+        "login": "true"
+      },
+      "text": "恭喜你获得cookie成功"
+    }
+  },
+  {
     "description": "这是我的一个带cookie请求模拟装",
     "request": {
       "uri": "/getWithCookie",
@@ -29,13 +45,10 @@
       }
     },
     "response": {
-      "headers":{
-        "Content-Type": "text/html;charset=gbk"
-      },
-      "status": "200",
-      "json": {
-        "huhanshan": "success",
-        "status": "1"
+     "status":"200",
+      "json":{
+        "huhanshan":"success",
+        "status":"1"
       }
     }
   }
