@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "用户管理系统测试组件">
+    <test name="用户管理系统测试用例">
+    <classes>
+        <class name="com.yin.testcase.Login">
+            <method>
+                <include name="loginTrue"/>
+                <include name="loginfalse"/>
+            </method>
+        </class>
+        <class name="com.yin.testcase.AddUser">
+            <method>
+                <include name="addUser"/>
+            </method>
+        </class>
+        <class name="com.yin.testcase.UpdateUserInfo">
+            <method>
+                <include name="updateUserInfo"/>
+                <include name="deleteUser"/>
+            </method>
+        </class>
+        <class name="com.yin.testcase.GetUserInfo">
+            <method>
+                <include name="getUserInfo"/>
+            </method>
+        </class>
+        <class name="com.yin.testcase.GetUserList">
+            <method>
+                <include name="getUserList"/>
+            </method>
+        </class>
+    </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.yin.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
